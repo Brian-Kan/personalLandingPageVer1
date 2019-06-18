@@ -1,0 +1,18 @@
+// ====================================
+// FOOTER
+// ====================================
+
+footer {
+    background-color: $primeGenCol;
+    height: 10vh;    
+    color: $secondaryGenCol;    
+}
+
+.footerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+

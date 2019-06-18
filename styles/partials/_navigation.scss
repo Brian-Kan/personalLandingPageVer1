@@ -1,0 +1,61 @@
+
+// ====================================
+// NAVIGATION
+// ====================================
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header li {
+    margin-left: 1rem;
+}
+
+/*-------- HOVER NAV --------*/
+nav a:link,
+nav a:visited {
+	border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    color: $secondaryGenCol;
+}
+
+nav a:hover,
+nav a:active {
+	border-bottom: 2px solid $highlight;
+}
+
+
+
+// ============================================
+//  HAMBURGER MENU
+// ============================================
+
+#hamMenu {
+    z-index: 10;
+    @media(min-width: 1000px){
+        display: none;
+    }
+}
+
+.hidden {
+   display: none;
+   @media(min-width: 1000px){
+       display: flex;
+   }
+
+}
+
+.sideMenu {
+   flex-direction: column;
+   position: absolute;
+   right: 0;
+   top: 10vh;
+   bottom: 0;
+   justify-content: space-around;
+
+   @media(min-width: 1000px){
+       flex-direction: row;
+       position: static;
+   }
+}

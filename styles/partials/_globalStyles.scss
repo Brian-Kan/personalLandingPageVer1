@@ -1,0 +1,52 @@
+// ====================================
+// GLOBAL STYLINGS
+// ====================================
+
+
+$wetAsphalt: #34495e;
+$primaryFontColor: #f1c40f;
+
+$primeGenCol: #2d3436;
+$secondaryGenCol: #f1f2f6;
+
+$color4:#2ca3da;
+$color5: #74c3e7;
+
+$highlight: #EA2027;
+
+$primaryFont: 'Comfortaa', cursive;
+$secondaryFont: 'Playfair Display', serif;
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {	
+	font-size: 125%;
+	font-weight: regular;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-size: 1rem;
+	font-family: $primaryFont;
+	line-height: 1.6rem;
+	letter-spacing: 0.1rem;	
+}
+
+.wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	width: 85%;
+}
+
+ul {
+	list-style-type:none;	
+}
+
+a {
+	text-decoration: none;
+}

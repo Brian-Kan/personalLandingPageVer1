@@ -1,0 +1,54 @@
+
+
+// ====================================
+// HEADER
+// ====================================
+
+// TOP BAR
+header {
+    background-color: $primeGenCol;
+}
+
+.topBar {
+    height: 10vh;    
+    color: $secondaryGenCol;
+    display: flex;
+    justify-content: space-between;
+}
+
+// .logo {
+//     display: flex;
+// }
+
+.topBar h2 {
+    letter-spacing: .9rem;
+}
+
+header h2,
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+// HEADER MAIN
+ .headerH1 {
+    background-image: linear-gradient(to right, rgba(0,0,0,.7) 25%, rgba(0,0,0,.7) 25%), url(../assets/workspace-2985783_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+    color: $primaryFontColor;
+ }
+
+.h1Alignment {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;    
+ }
+
+ h1 {
+     line-height: 2.2rem;
+ }
+
