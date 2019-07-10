@@ -10,8 +10,7 @@
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-
-    <link type="image/png" href="assets/favicon.png" rel="icon">
+    <link type="image/png" href="./assets/favicon.ico" rel="icon">
 
     <link rel="stylesheet" href="styles/style.css"/>
     <title>All About Brian</title>
@@ -20,47 +19,47 @@
 
     <!-- HEADER STARTS -->
     <header>
-        <div class="topBar wrapper">
+        <div class="topBar wrapper" class="home">
             <div class="logo">
-                <img src="./assets/myIcon.PNG" alt="">
+                <img src="./assets/myIconUp.png" alt="My business icon. It looks like a blue 20-sided die with a red outline.">
                 <h2>brian</h2>
             </div>
             <nav>
-                <p><i class="fab fa-js-square" id="hamMenu"></i></p>
+                <p><i class="fas fa-bars" id="hamMenu"></i></p>
                 <ul class="headerUL hidden">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>                    
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="headerH1">
             <div class="wrapper h1Alignment">
-                <h1>Brian Kan </br>Front-End Developer</h1>
+                <h1><span>Brian Kan</span> </br>Front-End Developer</h1>
             </div>
         </div>
  
     </header>
     <main>
-
+        
         <!-- ABOUT ME SECTION STARTS -->
-        <section class="aboutMeSection">
+        <section class="aboutMeSection" id="about">
             <div class="wrapper">
                 <div class="aboutMeFlex">
                     <!-- about me -->
                     <div class="aboutMeBlurb">
-                        <h2>I am Brian</h2>
-                        <p>Hello!  My name is Brian and I am a Web Devevloper.  I love working on new challenges and collaborating with others while building a supportive environment.  I have a background in commerce and over 7 years work experience in an intensive environment.  Combining both my past experience and newfound knowledge and experience in web development I would make an invaluable asset to your team.
-                            
-                        When not coding, you can find me learaning new skills such as model construction and painting, learning to compose new songs.
+                        <h2 class="aboutMeH2">I am Brian</h2>
+                        <p>Who am I? I'm a Web Developer now looking for a new challenge in life!</p>
+
+                        <p>I love taking on new challenges with people and discovering creative solutions to existing problems.</p>
                         
-                        I immersed myself in Web Development in pursuit of the next better version of myself.  </p>
+                        <p>As a previous workforce manager I am always pushing myself with a positive approach which is why I love using the latest technologies such as JavaScript and React and working in highly collaborative environments.</p>
+                            
+                        <p>I look forward to the horizon to see where I can combine my creativity with my newfound skill set and experience.</p>
+                                
                     </div>
-                    <!-- <div class="aboutMeImage">
-                        <img src="./assets/brianKanProfilePic.jpg" alt="A profile image of Brian Kan - Web Developer Extraordinaire!">
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -68,74 +67,68 @@
         <!-- SKILLS SECTION STARTS -->
         <section>
             <div class="wrapper">
-                <div class="skillsBkg">
-                    <h2>Brian's ever growing skill set</h2>
+                <div class="skillsBkg" id="skills">
+                    <h2>Brian's <br class="brianBreak">ever-<br class="everBreak">growing <br class="growingBreak">skill <br class="skillBreak">set</h2>
                     
                     <div class="iconsFlex">
                         <!-- Html -->
                         <div class="skillsGroup">
                             <p><i class="fab fa-html5"></i></p>
-                            <p>HTML5</p>
+                            <h3>HTML5</h3>
                         </div>
 
                         <!-- Css -->
                         <div class="skillsGroup">
                             <p><i class="fab fa-css3-alt"></i></p>
-                            <p>CSS3</p>
+                            <h3>CSS3</h3>
                         </div>
 
                         <!-- Sass -->
                         <div class="skillsGroup">
                             <p><i class="fab fa-sass"></i></p>
-                            <p>SASS</p>
+                            <h3>Sass</h3>
                         </div>
 
                         <!-- JavaScript -->
                         <div class="skillsGroup">
                             <p><i class="fab fa-js-square"></i></p>
-                            <p>JavaScript</p>
+                            <h3>JavaScript</h3>
                         </div>
 
-                        <!-- Jquery -->
+                        <!-- jQuery -->
                         <div class="skillsGroup">
                             <p><i class="devicon-jquery-plain"></i></p>
-                            <p>Jquery</p>
+                            <h3>jQuery</h3>
                         </div>
 
                         <!-- Github -->
                         <div class="skillsGroup">
                             <p><i class="devicon-github-plain"></i></p>
-                            <p>Github</p>
+                            <h3>GitHub</h3>
                         </div>
 
                         <!-- React -->
                         <div class="skillsGroup">
                             <p><i class="fab fa-react"></i></p>
-                            <p>React</p>
+                            <h3>React</h3>
                         </div>
 
                         <!-- Firebase --> 
                         <div class="skillsGroup">
-                            <div><img src="./assets/icons8-firebase.svg" alt=""></div>
-                            <p>Firebase</p>
+                            <div><img src="./assets/icons8-firebase.svg" alt="The Firebase icon."></div>
+                            <h3>Firebase</h3>
                         </div>
 
                         <!-- sublime -->
                         <div class="skillsGroup">
-                            <div><img src="./assets/icons8-sublime-text-filled.svg" alt=""></div>
-                            <p>Sublime</p>
+                            <div><img src="./assets/icons8-sublime-text-filled.svg" alt="The Sublime icon."></div>
+                            <h3>Sublime</h3>
                         </div>
 
                         <!-- visual studio code -->
                         <div class="skillsGroup">
                             <p><i class="devicon-visualstudio-plain"></i></p>
-                            <p>Visual studio code</p>
-                        </div>
-
-                        <!-- prepros -->
-                        <div class="skillsGroup">
-                            <div class="sfgIcon"><img src="./assets/preprosSVG.svg" alt=""></div>
-                            <p>Prepros</p>
+                            <h3>Visual Studio Code</h3>
                         </div>
 
                     </div>
@@ -145,7 +138,7 @@
         </section>
 
         <!-- PROJECTS SECTION STARTS -->
-        <section class="myProjSec">
+        <section class="myProjSec" id="projects">
             <div class="wrapper">
                 <!-- projects that I've done -->
                 <h2>Some of my projects</h2>
@@ -157,26 +150,21 @@
                         <h4>Drive solo</h4>
                         <h3 class="primeLangs">Built with: HTML, CSS & Floats</h3>
                         <p>Have a legacy system that uses <span>floats</span> for styling?  I gotcha!</p>
-                        <ul class="indivProjUL">
-                            <li>JavaScript</li>
-                            <li>JQuery</li>
-                            <li>Edamam API</li>
-                            <li>SASS</li>                    
+                        <ul class="indivProjUL">                                             
                             <li>CSS3</li>
                             <li>HTML5</li>
                         </ul>
                         <div class="siteLinks">
-                            <a href="">View live</a>
-                            <a href="">Github</a>
+                            <a href="https://brian-kan.github.io/brianKanProjectOne/">View live</a>
+                            <a href="https://brian-kan.github.io/brianKanProjectOne/">Github</a>
                         </div>
                     </div>
 
                     <div class="indivProjImg">
-                        <a href=""><img src="./assets/driveSoloMod.jpg" alt=""></a>
+                        <a href="https://brian-kan.github.io/brianKanProjectOne/"><img src="./assets/driveSoloMod.jpg" alt="A screenshot of my project super imposed on a laptop."></a>
                     </div>
                     
                 </div>
-
 
                 <!-- project 2 -->
                 <div class="indivProjects">
@@ -185,21 +173,18 @@
                         <h3 class="primeLangs">Built with: HTML, CSS & Flexbox</h3>
                         <p>An elaborate multi-page website that showpieces the power of <span>flexbox</span>.</p>
                         <ul class="indivProjUL">
-                            <li>JavaScript</li>
-                            <li>JQuery</li>
-                            <li>Edamam API</li>
                             <li>SASS</li>                    
                             <li>CSS3</li>
                             <li>HTML5</li>
                         </ul>
                         <div class="siteLinks">
-                            <a href="">View live</a>
-                            <a href="">Github</a>
+                            <a href="https://brian-kan.github.io/brianKanProjectTwo/">View live</a>
+                            <a href="https://brian-kan.github.io/brianKanProjectTwo/">Github</a>
                         </div>
                     </div>
 
                     <div class="indivProjImg">
-                        <a href=""><img src="./assets/mindnsoulMod.jpg" alt=""></a>
+                        <a href="https://brian-kan.github.io/brianKanProjectTwo/"><img src="./assets/mindnsoulMod.jpg" alt="A screenshot of my project super imposed on a laptop."></a>
                     </div>
                     
                 </div>
@@ -212,7 +197,7 @@
                         <p>Trying to find a nice recipe while filtering for food restriction or preferences?  Have I got the app for you!</p>
                         <ul class="indivProjUL">
                             <li>JavaScript</li>
-                            <li>JQuery</li>
+                            <li>jQuery</li>
                             <li>Edamam API</li>
                             <li>SASS</li>                    
                             <li>CSS3</li>
@@ -225,7 +210,7 @@
                     </div>
 
                     <div class="indivProjImg">
-                        <a href="https://netrecipe.github.io/netrecipe/"><img src="./assets/netrecipeMod.jpg" alt=""></a>
+                        <a href="https://netrecipe.github.io/netrecipe/"><img src="./assets/netrecipeMod.jpg" alt="A screenshot of my project super imposed on a laptop."></a>
                     </div>
                     
                 </div>
@@ -237,23 +222,23 @@
                         <h3 class="primeLangs">Built with: React, JavaScript & Pixabay API</h3>
                         <p>A beautiful demonstration of the widely used <span>infinite scroll!</span>.  Now with more filtering options.</p>
                         <ul class="indivProjUL">
+                            <li>React</li>
                             <li>JavaScript</li>
-                            <li>JQuery</li>
-                            <li>Edamam API</li>
+                            <li>jQuery</li>
+                            <li>Pixabay API</li>
                             <li>SASS</li>                    
                             <li>CSS3</li>
                             <li>HTML5</li>
                         </ul>
                         <div class="siteLinks">
-                            <a href="">View live</a>
-                            <a href="">Github</a>
+                            <a href="https://brian-kan.github.io/project5/">View live</a>
+                            <a href="https://brian-kan.github.io/project5/">Github</a>
                         </div>
                     </div>
 
                     <div class="indivProjImg">
-                        <a href=""><img src="./assets/infiniteScrollMod2.jpg" alt=""></a>
-                    </div>
-                    
+                        <a href="https://brian-kan.github.io/project5/"><img src="./assets/infiniteScrollMod2.jpg" alt="A screenshot of my project super imposed on a smartphone."></a>
+                    </div>                    
                     
                 </div>
 
@@ -265,36 +250,72 @@
                         <h3 class="primeLangs">Built with: React, Firebase & TVmaze API</h3>
                         <p>Pulled a large team together to bring you an app that smoothly coordinates between React, Firebase and an API.</p>
                         <ul class="indivProjUL">
+                            <li>React</li>
                             <li>JavaScript</li>
-                            <li>JQuery</li>
-                            <li>Edamam API</li>
+                            <li>jQuery</li>
+                            <li>TVmaze API</li>
                             <li>SASS</li>                    
                             <li>CSS3</li>
                             <li>HTML5</li>
                         </ul>
                         <div class="siteLinks">
-                            <a href="">View live</a>
-                            <a href="">Github</a>
+                            <a href="https://superduperlatives.github.io/tvWatcher/">View live</a>
+                            <a href="https://superduperlatives.github.io/tvWatcher/">Github</a>
                         </div>
                     </div>
 
                     <div class="indivProjImg">
-                        <a href=""><img src="./assets/bingeWatchersMod.jpg" alt=""></a>
+                        <a href="https://superduperlatives.github.io/tvWatcher/"><img src="./assets/bingeWatchersMod.jpg" alt="A screenshot of my project super imposed on a computer."></a>
                     </div>
                     
                 </div>
             </div>
 
-        </section>
-
-        
+        </section>       
 
         <!-- CONTACT SECTION STARTS -->
         <section>
             <div class="wrapper">
-            <!-- contact me! -->
+            <!-- connect with me! -->
+            <div class="contactEverything" id="contacts">
+                <h2 class="contactH2">Connect with me!</h2>
 
-            <!-- form -->
+                <div class="contactFlexDivider">
+                    <div class="contactBlurb">
+                        <p>Feel free to reach out to me through any of these avenues.</p>                
+                    </div>
+
+                    <div class="contactInfoArrange">
+                        <div>
+                            <form action="submit" class="contactForm">
+                                <label for="contactFormName" class="visuallyHidden">Name</label>
+                                <input type="text" class="name contactName" id="contactFormName" name="contactFormName" placeholder="Name" required>
+
+                                <label for="contactFormEmail" class="visuallyHidden">Email</label>
+                                <input type="email" class="email contactEmail" id="contactFormEmail" name="contactFormEmail" placeholder="Email address" required>
+
+                                <label for="contactFormMessage" class="visuallyHidden">Message</label>
+                                <textarea name="contactFormMessage" class="message" id="contactFormMessage" cols="30" rows="10" placeholder="Message" required></textarea>
+
+                                <label for="contactFormSubmit" class="visuallyHidden">Submit</label>
+                                <input type="submit" class="submit" id="contactFormSubmit" name="contactFormSubmit">
+                            </form>
+                            <p class="contactIcons"><i class="fas fa-mobile-alt"></i>647.388.8882</p>
+
+                            <nav>
+                                <ul>
+                                    <li><a href="http://www.linkedin.com/in/briankancodes" class="contactIcons" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="https://twitter.com/BrianKanCodes"><i class="fab fa-twitter" target="_blank"></i></a></li>
+                                    <li><a href="https://github.com/Brian-Kan" class="contactIcons gitIconStyling" target="_blank"><i class="fab fa-git"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>           
+
         </div>
         </section>
 
@@ -302,15 +323,13 @@
     
     <footer>
         <div class="wrapper footerFlex">
-        <!-- footer -->
-        <p>Everything built by: Brian Kan</p>
-        <p>Headshot credit: Pam Lau</p>
-    </div>
+            <!-- footer -->
+            <p>Everything built by: Brian Kan</p>
+            <p>Headshot credit: Pam Lau</p>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 </html>
-
-

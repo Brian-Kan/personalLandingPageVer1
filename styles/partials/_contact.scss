@@ -1,0 +1,87 @@
+// ==========================================
+// CONTACT ME
+// ==========================================
+
+.contactEverything {
+    color: $primaryFontColor;
+    background-color: $primeGenCol;
+    padding: 1rem;
+    line-height: 2rem;
+    width: 60vw;
+    margin: 0 auto;
+    
+    z-index: 10;
+    position: relative;
+    bottom: 30px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+}
+
+.contactH2 {
+    padding-bottom: 1rem;
+}
+
+.contactH2::after {
+    content: "";
+    height: 2px;
+    background-color: $highlight;
+    width: 8rem;
+    position: absolute;
+    left: auto;
+    display: block;
+}
+
+.contactBlurb {
+    margin-bottom: 1rem;
+}
+
+// .contactFlexDivider {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// .contactInfoArrange{
+//     display: flex;
+//     justify-content: space-evenly;
+// }
+
+.contactInfoArrange {
+    // text-align: center;
+    a {
+        display: block;
+    }
+    a:link,
+    a:visited {
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.2s;
+        color: $primaryFontColor;
+    }
+    a:hover,
+    a:active {
+        border-bottom: 2px solid $highlight;
+    }
+    
+}
+
+.contactIcons {
+    font-size: 1.5rem;
+}
+
+.contactInfoText {
+    font-size: .8rem;
+}
+
+.gitIconStyling i{
+    font-size: 2rem;
+}
+
+
+
+
+
+// ==========================================
+// CONTACT FORM
+// ==========================================
+.contactForm {
+    display: flex;
+    flex-direction: column;
+};

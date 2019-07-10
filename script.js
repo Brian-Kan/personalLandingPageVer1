@@ -7,9 +7,4 @@ $( document ).ready(function() {
         $(".headerUL").toggleClass( "sideMenu" )
 
     })
-    
-
-
-
-
 });
