@@ -1,4 +1,187 @@
 
+
+// ============================================
+//  MEDIA QUERIES - WIDTH SPECIFIC
+// ============================================
+
+@media (max-width: 1380px) {
+    // ---- ABOUT SECTION ----
+    .aboutMeH2 {
+        font-size: 1rem;
+    }
+    .aboutMeBlurb p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    // ---- ABOUT SECTION ----
+    .aboutMeSection {
+        overflow: hidden;
+        height: 1%;
+        padding: 2rem 0;        
+    }
+    .aboutMeSection::after {
+        display: none;
+    }
+    .aboutProfilePic {
+        display: block;
+        width: 50%;
+        margin: 1rem auto;
+    }
+    .aboutMeFlex div {
+        width: 100%;        
+    }
+    .aboutMeBlurb {        
+        height: 100%;
+    }
+
+    // ---- PROJECTS SECTION ----
+
+    .indivProjects,
+    .indivProjects:nth-of-type(even) {
+        flex-direction: column;
+    }
+    .indivProjInfo {
+        width: initial;
+    }
+    .indivProjImg {
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    // ---- CONTACT SECTION ----
+    .contactEverything {
+        width: initial;
+    }
+}
+
+@media (max-width: 800px) {
+    .myProjSec h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    // ---- HEADER SECTION ----
+    .logo h2 {
+        display: none;
+    }
+    // ---- ABOUT SECTION ----
+    .aboutProfilePic {
+        width: 80%;
+    }
+    // ---- PROJECTS SECTION ----
+    .myProjSec h2 {
+        text-transform: capitalize;
+    }
+}
+
+@media (max-width: 500px) {
+    // ---- SKILLS SECTION ----
+    .skillsGroup {
+        margin: .2rem 1rem;
+    }
+    .skillsGroup h3 {
+        font-size: .8rem;
+    }
+    .skillsGroup i {
+        font-size: 2rem;
+    }
+    .skillsBkg {
+        width: initial;
+    }
+    .skillsGroup img {
+        width: 2rem;
+    }
+
+    // ---- FOOTER ----
+    .footerFlex {
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 425px) {
+    // .headerH1 {
+    //     margin-top: 3rem;
+    // }
+
+    // ---- SKILLS SECTION ----
+    .skillsBkg h2 {
+        font-size: 10vw;
+    }    
+
+    // ---- PROJECT SPECIFIC ----
+    .myProjSec h2 {
+        font-size: 1.5rem;
+    }
+    .indivProjects {
+        margin: 1rem 0; 
+    }
+
+    // ---- CONTACT SECTION ----
+    .contactH2 {
+        font-size: 1rem;
+    }
+}
+
+// ============================================
+// MEDIA QUERIES - HEIGHT SPECIFIC
+// ============================================
+@media(max-height: 600px) {
+    // ---- HEADER SPECIFIC ----
+    .topBar {
+        height: 20vh;
+    }
+    .logo h2 {
+        display: none;
+    }
+    .sideMenu {
+        margin: 1.5rem 1rem 0 0
+    }
+    h1 {
+        line-height: 1.5;
+        span {
+            font-size: 2rem;
+        }
+    }
+    .secondPartOfH1 {
+        font-size: 2rem;
+    }
+
+    // ---- SKILLS SECTION ----
+    .skillsGroup {
+        margin: .2rem 1rem;
+    }
+    .skillsGroup h3 {
+        font-size: .8rem;
+    }
+    .skillsGroup i {
+        font-size: 2rem;
+    }
+    .skillsBkg {
+        width: initial;
+    }
+    .skillsGroup img {
+        width: 2rem;
+    }
+
+    // ---- PROJECTS SECTION ----
+    .myProjSec h2 {
+        font-size: 2rem;
+    }
+
+    // ---- FOOTER SECTION ----
+    footer {
+        height: 20vh;
+    }
+    .footerFlex {
+        font-size: .6rem;
+    }
+}
+
+
+
 // ============================================
 //  HAMBURGER MENU
 // ============================================
@@ -29,9 +212,4 @@
        flex-direction: row;
        position: static;       
    }
-}
-
-
-@media (max-width: 1000px) {
-
 }

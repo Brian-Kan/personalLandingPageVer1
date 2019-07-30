@@ -16,10 +16,6 @@ header {
     justify-content: space-between;
 }
 
-// .logo {
-//     display: flex;
-// }
-
 .topBar h2 {
     letter-spacing: .9rem;
 }
@@ -53,5 +49,12 @@ header nav {
  }
 
  h1 span {
-     font-size:2rem;
+     font-size: 2rem;
+ }
+
+ .secondPartOfH1 {
+     font-size: 2.5rem;
+     font-family: $secondaryFont;
+     color: $color4;
+     text-transform: capitalize;
  }

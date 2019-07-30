@@ -30,24 +30,14 @@
     display: block;
 }
 
-.contactBlurb {
-    margin-bottom: 1rem;
+.mobileNumber {    
+    margin: 1rem 0 1rem 0;
 }
 
-// .contactFlexDivider {
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .contactInfoArrange{
-//     display: flex;
-//     justify-content: space-evenly;
-// }
-
 .contactInfoArrange {
-    // text-align: center;
     a {
         display: block;
+        padding-bottom: 1rem;
     }
     a:link,
     a:visited {
@@ -58,30 +48,56 @@
     a:hover,
     a:active {
         border-bottom: 2px solid $highlight;
-    }
-    
+    }    
+}
+
+.contactIconsList {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0 1rem 0;
 }
 
 .contactIcons {
-    font-size: 1.5rem;
-}
-
-.contactInfoText {
-    font-size: .8rem;
+    font-size: 2.5rem;
 }
 
 .gitIconStyling i{
     font-size: 2rem;
 }
 
-
-
-
-
 // ==========================================
 // CONTACT FORM
 // ==========================================
 .contactForm {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 };
+
+input,
+textarea {
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.submit {
+    margin: 2rem auto;
+    width: 10rem;
+    padding: .5rem;
+    text-transform: capitalize;
+    color: $secondaryGenCol;
+    border: none;
+    border-radius: 10px;
+    background-color: $color4;
+    transition: all 0.2s;
+}
+
+.submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(102, 99, 235, 0.2);
+}
+
+.submit:active {
+    transform: translateY(-1px);
+    box-shadow: 0 15px 10px rgba(102, 99, 235, 0.2);
+}
