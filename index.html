@@ -37,7 +37,7 @@
         </div>
         <div class="headerH1">
             <div class="wrapper h1Alignment">
-                <h1><span>Brian Kan</span> </br>Front-End Developer</h1>
+                <h1><span>Brian Kan</span> </br><span class="secondPartOfH1">Front-end web developer</span></h1>
             </div>
         </div>
  
@@ -47,6 +47,9 @@
         <!-- ABOUT ME SECTION STARTS -->
         <section class="aboutMeSection" id="about">
             <div class="wrapper">
+                <div class="aboutProfilePic">
+                    <img src="./assets/brianKanProfilePic.jpg" alt="A profile image of the oh-so handsome Brian Kan.">
+                </div>
                 <div class="aboutMeFlex">
                     <!-- about me -->
                     <div class="aboutMeBlurb">
@@ -58,7 +61,7 @@
                         <p>As a previous workforce manager I am always pushing myself with a positive approach which is why I love using the latest technologies such as JavaScript and React and working in highly collaborative environments.</p>
                             
                         <p>I look forward to the horizon to see where I can combine my creativity with my newfound skill set and experience.</p>
-                                
+
                     </div>
                 </div>
             </div>
@@ -68,7 +71,7 @@
         <section>
             <div class="wrapper">
                 <div class="skillsBkg" id="skills">
-                    <h2>Brian's <br class="brianBreak">ever-<br class="everBreak">growing <br class="growingBreak">skill <br class="skillBreak">set</h2>
+                    <h2>Brian's ever-growing skill set</h2>
                     
                     <div class="iconsFlex">
                         <!-- Html -->
@@ -89,10 +92,10 @@
                             <h3>Sass</h3>
                         </div>
 
-                        <!-- JavaScript -->
+                        <!-- sublime -->
                         <div class="skillsGroup">
-                            <p><i class="fab fa-js-square"></i></p>
-                            <h3>JavaScript</h3>
+                            <div><img src="./assets/icons8-sublime-text-filled.svg" alt="The Sublime icon."></div>
+                            <h3>Sublime</h3>
                         </div>
 
                         <!-- jQuery -->
@@ -119,11 +122,11 @@
                             <h3>Firebase</h3>
                         </div>
 
-                        <!-- sublime -->
+                        <!-- JavaScript -->
                         <div class="skillsGroup">
-                            <div><img src="./assets/icons8-sublime-text-filled.svg" alt="The Sublime icon."></div>
-                            <h3>Sublime</h3>
-                        </div>
+                            <p><i class="fab fa-js-square"></i></p>
+                            <h3>JavaScript</h3>
+                        </div>                        
 
                         <!-- visual studio code -->
                         <div class="skillsGroup">
@@ -282,30 +285,31 @@
 
                 <div class="contactFlexDivider">
                     <div class="contactBlurb">
-                        <p>Feel free to reach out to me through any of these avenues.</p>                
+                        <p>Feel free to reach out to me through any of these avenues.</p>     
+                        <p class="mobileNumber"><i class="fas fa-mobile-alt"></i> 647.388.8882</p>           
                     </div>
 
                     <div class="contactInfoArrange">
                         <div>
-                            <form action="submit" class="contactForm">
+                            <form action="https://formspree.io/briankan00@hotmail.com" method="POST" class="contactForm">
                                 <label for="contactFormName" class="visuallyHidden">Name</label>
-                                <input type="text" class="name contactName" id="contactFormName" name="contactFormName" placeholder="Name" required>
+                                <input type="text" class="name contactName" id="contactFormName" name="contactFormName name" placeholder="Name" required>
 
                                 <label for="contactFormEmail" class="visuallyHidden">Email</label>
-                                <input type="email" class="email contactEmail" id="contactFormEmail" name="contactFormEmail" placeholder="Email address" required>
+                                <input type="email" class="email contactEmail" id="contactFormEmail" name="contactFormEmail name" placeholder="Email address" required>
 
                                 <label for="contactFormMessage" class="visuallyHidden">Message</label>
-                                <textarea name="contactFormMessage" class="message" id="contactFormMessage" cols="30" rows="10" placeholder="Message" required></textarea>
+                                <textarea name="contactFormMessage name" class="message" id="contactFormMessage" cols="30" rows="10" placeholder="Message" required></textarea>
 
-                                <label for="contactFormSubmit" class="visuallyHidden">Submit</label>
+                                <label for="contactFormSubmit" class="visuallyHidden hide-element">Submit</label>
                                 <input type="submit" class="submit" id="contactFormSubmit" name="contactFormSubmit">
                             </form>
-                            <p class="contactIcons"><i class="fas fa-mobile-alt"></i>647.388.8882</p>
+                            
 
                             <nav>
-                                <ul>
+                                <ul class="contactIconsList">
                                     <li><a href="http://www.linkedin.com/in/briankancodes" class="contactIcons" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                                    <li><a href="https://twitter.com/BrianKanCodes"><i class="fab fa-twitter" target="_blank"></i></a></li>
+                                    <li><a href="https://twitter.com/BrianKanCodes" class="contactIcons" target="_blank"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="https://github.com/Brian-Kan" class="contactIcons gitIconStyling" target="_blank"><i class="fab fa-git"></i></a></li>
                                 </ul>
                             </nav>
