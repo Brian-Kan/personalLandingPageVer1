@@ -1,28 +1,224 @@
 
 // ====================================
-// NAVIGATION
+// NAVIGATION (JS)
 // ====================================
 
+// .headerUL {
+//     display: flex;
+//     list-style-type: none;
+// }
+
+// header li {
+//     margin-left: 1rem;
+// }
+
+// ====================================
+// HOVER NAV (JS)
+// ====================================
+
+// nav a:link,
+// nav a:visited {
+// 	border-bottom: 2px solid transparent;
+//     transition: border-bottom 0.2s;
+//     color: $secondaryGenCol;
+// }
+
+// nav a:hover,
+// nav a:active {
+// 	border-bottom: 2px solid $highlight;
+// }
+
+// ====================================
+// NAVIGATION (CSS)
+// ====================================
+.navCheckbox {
+    display: none;
+}
+
+.navButton {
+    background-color: $color5;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 40;
+    box-shadow: 0 1rem 3rem rgba($primeGenCol, .1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.navBackground {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 1.5rem;
+    right: 2.5rem;
+    background-image: radial-gradient($color4, $color4);
+    z-index: 20;
+    transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigationNav {
+    height: 100vh;
+    // width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+
+    opacity: 0;
+    width: 0;
+    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+// Also used in the JS version listed above.
+// navigation list --- ************************************
 .headerUL {
-    display: flex;
-    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+
+    // z-index: 100;
 }
 
-header li {
-    margin-left: 1rem;
+.navItem {
+    margin: 1rem;
 }
 
-/*-------- HOVER NAV --------*/
-nav a:link,
-nav a:visited {
-	border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
+// ***** NEW
+// .navLink {    
+//     display: none;
+//     transition: all .4s;
+// }
+
+
+.navLink:link,
+.navLink:visited {
+    // display: inline-block;
+    display: none;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
     color: $secondaryGenCol;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $secondaryGenCol 50%);
+    background-size: 230%;
+    transition: all .4s;
+
+    span {
+        margin-right: 1.5rem;
+        display: inline-block;
+    }
 }
 
-nav a:hover,
-nav a:active {
-	border-bottom: 2px solid $highlight;
+// ***** OLD
+// .navigationNav a:link,
+// .navigationNav a:visited {
+//     display: inline-block;
+//     font-size: 3rem;
+//     font-weight: 300;
+//     padding: 1rem 2rem;
+//     color: $secondaryGenCol;
+//     text-transform: uppercase;
+//     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $secondaryGenCol 50%);
+//     background-size: 230%;
+//     transition: all .4s;
+
+//     span {
+//         margin-right: 1.5rem;
+//         display: inline-block;
+//     }
+// }
+
+// *** NEW
+.navLink:hover,
+.navLink:active {
+    background-position: 100%;
+    color: $color4;
+    transform: translateX(1rem);
+}
+
+// *** OLD
+// .navigationNav a:hover,
+// .navigationNav a:active {
+//     background-position: 100%;
+//     color: $color4;
+//     transform: translateX(1rem);
+// }
+
+
+// Navigation Functionality
+.navCheckbox:checked ~ .navBackground {
+    transform: scale(80);
+}
+
+.navCheckbox:checked ~ .navigationNav {
+    opacity: 1;
+    width: 100%;    
+}
+
+// Ensuring the <a> tags show up once maximized
+.navCheckbox:checked ~ .navigationNav .navLink:link,
+.navCheckbox:checked ~ .navigationNav .navLink:visited {
+    display: inline-block;
 }
 
 
+//Navigation Icon
+.navigationIcon {
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.navigationIcon,
+.navigationIcon::before,
+.navigationIcon::after {
+    width: 3rem;
+    height: 3px;
+    background-color: $wetAsphalt;
+    display: inline-block;
+}
+
+.navigationIcon::before,
+.navigationIcon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+}
+
+.navigationIcon::before {
+    top: -.8rem;
+}
+
+.navigationIcon::after {
+    top: .8rem;
+}
+
+.navButton:hover .navigationIcon::before {
+    top: -1rem;
+}
+
+.navButton:hover .navigationIcon::after {
+    top: 1rem;
+}
+
+.navCheckbox:checked + .navButton .navigationIcon {
+    background-color: transparent;
+}
+
+.navCheckbox:checked + .navButton .navigationIcon::before {
+    top: 0;
+    transform: rotate(135deg)
+}
+
+.navCheckbox:checked + .navButton .navigationIcon::after {
+    top: 0;
+    transform: rotate(-135deg)
+}
