@@ -7,4 +7,11 @@ $( document ).ready(function() {
         $(".headerUL").toggleClass( "sideMenu" )
 
     })
+
+    // $(".navItem").on('click',()=>{
+        
+    //     $(".headerUL").toggleClass( "menuClose" )
+
+    // })
+
 });
